@@ -23,6 +23,8 @@
     "cors": "^2.8.4",
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
-    "pug": "^2.0.0-rc.4"
+    "pug": "^2.0.0-rc.4",
+    "request": "^2.83.0",
+    "uuid-v4": "^0.1.0"
   }
 }
