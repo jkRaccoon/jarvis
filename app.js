@@ -2,6 +2,8 @@ var express = require('express');
 var exphbs  = require('express-handlebars');
 var bodyParser = require('body-parser');
 var path = require('path');
+var compression = require('compression');
+var cors = require('cors');
 var jarvis = require('./src/routes/jarvis');
 var app = express();
 
@@ -13,8 +15,10 @@ app.engine('.html', exphbs({
 }));
 app.set('view engine', '.html');
 
+app.use(cors());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(compression());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
