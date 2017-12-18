@@ -1,0 +1,25 @@
+{
+  "name": "jarvis",
+  "version": "1.0.0",
+  "description": "nodejs기반 슬랙 채팅봇",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkRaccoon/jarvis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jkRaccoon/jarvis/issues"
+  },
+  "homepage": "https://github.com/jkRaccoon/jarvis#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "pug": "^2.0.0-rc.4"
+  }
+}

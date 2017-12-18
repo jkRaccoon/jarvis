@@ -1,0 +1,17 @@
+.DS_Store
+bower_components
+node_modules
+*.bak
+apidoc
+.nyc_output
+coverage
+src/upload/*
+!src/upload/README.md
+.project
+db
+dist
+yarn.lock
+package-lock.json
+.rnd
+.gulp-cache
+files/*
